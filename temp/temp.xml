@@ -1,0 +1,25 @@
+<annotation>
+    <folder>less_selected</folder>
+    <!-- Image file name e.g. image.jpg -->
+    <filename>6213-89-%s.jpg</filename>
+    <!-- Path to Image -->
+    <path>c:\Users\edupt\Documents\GitHub\LEGO-ID-Project-Training-Data\TrainingData\images</path>
+    <size>
+        <width>500</width>
+        <height>500</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <!-- Name of part number -->
+        <name>6213</name>
+        <truncuated>0</truncuated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>211</xmin>
+            <ymin>196</ymin>
+            <xmax>284</xmax>
+            <ymax>339</ymax>
+        </bndbox>
+    </object>
+</annotation>

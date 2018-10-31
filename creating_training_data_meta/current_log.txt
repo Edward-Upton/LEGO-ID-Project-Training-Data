@@ -1,0 +1,150 @@
+Parser Options
+  Input file: temp.pov
+  Remove bounds........On 
+  Split unions.........Off
+  Library paths:
+    C:\Users\edupt\Documents\GitHub\LEGO-ID-Project-Training-Data\POV-RAY\Includ
+es\include
+    C:\Users\edupt\Documents\GitHub\LEGO-ID-Project-Training-Data\POV-RAY\Includ
+es\LGEO\lg
+    C:\Users\edupt\Documents\POV-Ray\v3.7\include
+    C:\WINDOWS\Fonts
+  Clock value:    0.000  (Animation off)
+Image Output Options
+  Image resolution.....50 by 50 (rows 1 to 50, columns 1 to 50).
+  Output file..........c:\Users\edupt\Documents\GitHub\LEGO-ID-Project-Training-
+Data\creating_training_data_meta\temp.jpg, 24 bpp, quality 90% JPEG
+  Graphic display......Off
+  Mosaic preview.......Off
+  Continued trace......Off
+Information Output Options
+  All Streams to console..........On 
+  Debug Stream to console.........On 
+  Fatal Stream to console.........On 
+  Render Stream to console........On 
+  Statistics Stream to console....On 
+  Warning Stream to console.......On 
+File: C:\Users\edupt\Documents\GitHub\LEGO-ID-Project-Training-Data\POV-RAY\Incl
+udes\LGEO\lg\lg_defs.inc  Line: 231
+Parse Warning: Should have at least 2 objects in csg.
+File: C:\Users\edupt\Documents\GitHub\LEGO-ID-Project-Training-Data\POV-RAY\Incl
+udes\LGEO\lg\lg_defs.inc  Line: 260
+Parse Warning: Should have at least 2 objects in csg.
+File: C:\Users\edupt\Documents\GitHub\LEGO-ID-Project-Training-Data\POV-RAY\Incl
+udes\LGEO\lg\lg_defs.inc  Line: 683
+Parse Warning: Should have at least 2 objects in csg.
+File: C:\Users\edupt\Documents\GitHub\LEGO-ID-Project-Training-Data\POV-RAY\Incl
+udes\LGEO\lg\lg_defs.inc  Line: 711
+Parse Warning: Should have at least 2 objects in csg.
+File: temp.pov  Line: 14
+Possible Parse Error: All #version and #declares of float, vector, and color
+ require semi-colon ';' at end.
+File: C:\Users\edupt\Documents\GitHub\LEGO-ID-Project-Training-Data\POV-RAY\Incl
+udes\include\screen.inc  Line: 91
+Parse Warning: More than one camera in scene. Ignoring previous camera(s).
+File: C:\Users\edupt\Documents\GitHub\LEGO-ID-Project-Training-Data\POV-RAY\Incl
+udes\include\screen.inc  Line: 91
+Parse Warning: More than one camera in scene. Ignoring previous camera(s).
+box_vertex_1 = (0.800000,0.160000,2.400000)
+box_vertex_2 = (0.800000,-2.880000,2.400000)
+box_vertex_3 = (0.800000,0.160000,-2.400000)
+box_vertex_4 = (0.800000,-2.880000,-2.400000)
+box_vertex_5 = (-0.800000,0.160000,2.400000)
+box_vertex_6 = (-0.800000,0.160000,-2.400000)
+box_vertex_7 = (-0.800000,-2.880000,2.400000)
+box_vertex_8 = (-0.800000,-2.880000,-2.400000)
+possible_screen_max_XY_1 = (22.375893,22.613829)
+possible_screen_max_XY_2 = (22.461502,28.260965)
+possible_screen_max_XY_3 = (30.543394,27.280342)
+possible_screen_max_XY_4 = (30.352724,33.073661)
+possible_screen_max_XY_5 = (19.656949,24.113116)
+possible_screen_max_XY_6 = (27.824654,28.954725)
+possible_screen_max_XY_7 = (19.834307,29.809143)
+possible_screen_max_XY_8 = (27.725706,34.796201)
+Parse Warning: This scene had other declarations preceding the first #version
+ directive. Please be aware that as of POV-Ray 3.7, unless already specified via
+ an INI option, a #version is expected as the first declaration in a scene file.
+ If this is not done, POV-Ray may apply compatibility settings to some features
+ that are intended to make pre-3.7 scenes render as designed. You are strongly
+ encouraged to add a #version statement to the scene to make your intent clear.
+ Future versions of POV-Ray may make the presence of a #version mandatory.
+----------------------------------------------------------------------------
+Parser Statistics
+----------------------------------------------------------------------------
+Finite Objects:           89
+Infinite Objects:          1
+Light Sources:             1
+Total:                    91
+----------------------------------------------------------------------------
+Parser Time
+  Parse Time:       0 hours  0 minutes  0 seconds (0.026 seconds)
+              using 1 thread(s) with 0.031 CPU-seconds total
+  Bounding Time:    0 hours  0 minutes  0 seconds (0.000 seconds)
+              using 1 thread(s) with 0.000 CPU-seconds total
+----------------------------------------------------------------------------
+Render Options
+  Quality:  9
+  Bounding boxes.......On   Bounding threshold: 3
+  Antialiasing.........On  (Method 2, Threshold 0.050, Depth 3, Jitter 1.00,
+ Gamma 2.50)
+----------------------------------------------------------------------------
+Render Statistics
+Image Resolution 50 x 50
+----------------------------------------------------------------------------
+Pixels:             3498   Samples:            2454   Smpls/Pxl: 0.70
+Rays:               8048   Saved:                 0   Max Level: 4/5
+----------------------------------------------------------------------------
+Ray->Shape Intersection          Tests       Succeeded  Percentage
+----------------------------------------------------------------------------
+Box                               1376            1237     89.90
+Cone/Cylinder                    10544             544      5.16
+CSG Intersection                  5078             618     12.17
+CSG Merge                         4128              14      0.34
+CSG Union                          344             339     98.55
+Plane                            31894            6279     19.69
+Torus                             5288             446      8.43
+Torus Bound                       5288             512      9.68
+Bounding Box                    146970           12982      8.83
+----------------------------------------------------------------------------
+Roots tested:                   512   eliminated:                  286
+Shadow Ray Tests:             23956   Succeeded:                   148
+Shadow Cache Hits:              110
+----------------------------------------------------------------------------
+Radiosity samples calculated:               64 (1.02 %)
+Radiosity samples reused:                 6196
+Radiosity sample rays shot:               2096
+Radiosity octree nodes:                     26
+Radiosity octree samples/node:            2.46
+Radiosity blocks examined:              227542
+Radiosity blocks passed test 0:         227542 (100.00 %)
+Radiosity blocks passed test 1:         143255 (62.96 %)
+Radiosity blocks passed test 2:         142604 (62.67 %)
+Radiosity blocks passed test 3:         136934 (60.18 %)
+Radiosity blocks passed test 4:         136291 (59.90 %)
+Radiosity blocks passed test 5:         132444 (58.21 %)
+Radiosity blocks rejected:               95098 (41.79 %)
+----------------------------------------------------------------------------
+Radiosity Depth 0 calculated:               56 (0.94 %)
+Radiosity Depth 0 reused:                 5896
+Radiosity Depth 0 rays shot:              1960
+----------------------------------------------------------------------------
+Radiosity (final) calculated:               16 (0.29 %)
+Radiosity (final) reused:                 5410
+Radiosity (final) rays shot:               542
+----------------------------------------------------------------------------
+  Pass     Depth 0    Depth 1           Total
+----------------------------------------------------------------------------
+  1             39          3              42
+  2              2          4               6
+  Final         15          1              16
+----------------------------------------------------------------------------
+  Total         56          8              64
+  Weight     0.671      0.146 
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+Render Time:
+  Photon Time:      No photons
+  Radiosity Time:   0 hours  0 minutes  0 seconds (0.007 seconds)
+              using 4 thread(s) with 0.015 CPU-seconds total
+  Trace Time:       0 hours  0 minutes  0 seconds (0.016 seconds)
+              using 4 thread(s) with 0.000 CPU-seconds total

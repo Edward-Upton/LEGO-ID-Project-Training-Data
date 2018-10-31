@@ -1,0 +1,25 @@
+<annotation>
+    <folder>less_selected</folder>
+    <!-- Image file name e.g. image.jpg -->
+    <filename>%s</filename>
+    <!-- Path to Image -->
+    <path>%s</path>
+    <size>
+        <width>%s</width>
+        <height>%s</height>
+        <depth>%s</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <!-- Name of part number -->
+        <name>%s</name>
+        <truncuated>0</truncuated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>%s</xmin>
+            <ymin>%s</ymin>
+            <xmax>%s</xmax>
+            <ymax>%s</ymax>
+        </bndbox>
+    </object>
+</annotation>
