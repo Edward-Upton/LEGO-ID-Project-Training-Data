@@ -1,5 +1,5 @@
 Parser Options
-  Input file: c:\Users\edupt\Documents\GitHub\LEGO-ID-Project-Training-Data\temp
+  Input file: C:\Users\edupt\Documents\GitHub\LEGO-ID-Project-Training-Data\temp
 \temp.pov
   Remove bounds........On 
   Split unions.........Off
@@ -14,7 +14,8 @@ es\LGEO\lg
 Image Output Options
   Image resolution.....500 by 500 (rows 1 to 500, columns 1 to 500).
   Output file..........c:\Users\edupt\Documents\GitHub\LEGO-ID-Project-Training-
-Data\temp\temp.jpg, 24 bpp, quality 90% JPEG
+Data\temp\temp.jpg.png, 32 bpp with alpha PNG
+  Dithering............Off
   Graphic display......Off
   Mosaic preview.......Off
   Continued trace......Off
@@ -25,6 +26,16 @@ Information Output Options
   Render Stream to console........On 
   Statistics Stream to console....On 
   Warning Stream to console.......On 
+File: C:\Users\edupt\Documents\GitHub\LEGO-ID-Project-Training-Data\temp\temp.po
+v  Line: 8
+Possible Parse Error: All #version and #declares of float, vector, and color
+ require semi-colon ';' at end.
+File: C:\Users\edupt\Documents\GitHub\LEGO-ID-Project-Training-Data\POV-RAY\Incl
+udes\include\screen.inc  Line: 91
+Parse Warning: More than one camera in scene. Ignoring previous camera(s).
+File: C:\Users\edupt\Documents\GitHub\LEGO-ID-Project-Training-Data\POV-RAY\Incl
+udes\include\screen.inc  Line: 91
+Parse Warning: More than one camera in scene. Ignoring previous camera(s).
 File: c:\Users\edupt\Documents\GitHub\LEGO-ID-Project-Training-Data\POV-RAY\Incl
 udes\LGEO\lg\lg_defs.inc  Line: 231
 Parse Warning: Should have at least 2 objects in csg.
@@ -37,43 +48,26 @@ Parse Warning: Should have at least 2 objects in csg.
 File: c:\Users\edupt\Documents\GitHub\LEGO-ID-Project-Training-Data\POV-RAY\Incl
 udes\LGEO\lg\lg_defs.inc  Line: 711
 Parse Warning: Should have at least 2 objects in csg.
-File: c:\Users\edupt\Documents\GitHub\LEGO-ID-Project-Training-Data\temp\temp.po
-v  Line: 14
-Possible Parse Error: All #version and #declares of float, vector, and color
- require semi-colon ';' at end.
-File: C:\Users\edupt\Documents\GitHub\LEGO-ID-Project-Training-Data\POV-RAY\Incl
-udes\include\screen.inc  Line: 91
-Parse Warning: More than one camera in scene. Ignoring previous camera(s).
-File: C:\Users\edupt\Documents\GitHub\LEGO-ID-Project-Training-Data\POV-RAY\Incl
-udes\include\screen.inc  Line: 91
-Parse Warning: More than one camera in scene. Ignoring previous camera(s).
-possible_screen_max_XY_1 = (284.980393,198.982687)
-possible_screen_max_XY_2 = (284.046524,280.413705)
-possible_screen_max_XY_3 = (262.307795,250.547355)
-possible_screen_max_XY_4 = (261.941409,339.812750)
-possible_screen_max_XY_5 = (239.064211,196.328193)
-possible_screen_max_XY_6 = (211.138312,247.228344)
-possible_screen_max_XY_7 = (239.354428,277.345726)
-possible_screen_max_XY_8 = (212.287511,336.000763)
-Parse Warning: This scene had other declarations preceding the first #version
- directive. Please be aware that as of POV-Ray 3.7, unless already specified via
- an INI option, a #version is expected as the first declaration in a scene file.
- If this is not done, POV-Ray may apply compatibility settings to some features
- that are intended to make pre-3.7 scenes render as designed. You are strongly
- encouraged to add a #version statement to the scene to make your intent clear.
- Future versions of POV-Ray may make the presence of a #version mandatory.
+possible_screen_max_XY_1 = (250.000000,231.994312)
+possible_screen_max_XY_2 = (250.000000,427.561242)
+possible_screen_max_XY_3 = (198.770774,200.376667)
+possible_screen_max_XY_4 = (205.210927,394.275858)
+possible_screen_max_XY_5 = (301.229226,200.376667)
+possible_screen_max_XY_6 = (250.000000,170.779149)
+possible_screen_max_XY_7 = (294.789073,394.275858)
+possible_screen_max_XY_8 = (250.000000,362.857304)
 ----------------------------------------------------------------------------
 Parser Statistics
 ----------------------------------------------------------------------------
-Finite Objects:           89
-Infinite Objects:          1
+Finite Objects:           51
+Infinite Objects:          0
 Light Sources:             1
-Total:                    91
+Total:                    52
 ----------------------------------------------------------------------------
 Parser Time
-  Parse Time:       0 hours  0 minutes  0 seconds (0.026 seconds)
-              using 1 thread(s) with 0.015 CPU-seconds total
-  Bounding Time:    0 hours  0 minutes  0 seconds (0.000 seconds)
+  Parse Time:       0 hours  0 minutes  0 seconds (0.058 seconds)
+              using 1 thread(s) with 0.031 CPU-seconds total
+  Bounding Time:    0 hours  0 minutes  0 seconds (0.001 seconds)
               using 1 thread(s) with 0.000 CPU-seconds total
 ----------------------------------------------------------------------------
 Render Options
@@ -85,64 +79,67 @@ Render Options
 Render Statistics
 Image Resolution 500 x 500
 ----------------------------------------------------------------------------
-Pixels:           267050   Samples:           76844   Smpls/Pxl: 0.29
-Rays:             348790   Saved:                 0   Max Level: 4/5
+Pixels:           271550   Samples:           43794   Smpls/Pxl: 0.16
+Rays:             569851   Saved:             20568   Max Level: 5/5
 ----------------------------------------------------------------------------
 Ray->Shape Intersection          Tests       Succeeded  Percentage
 ----------------------------------------------------------------------------
-Box                            1688085         1284839     76.11
-Cone/Cylinder                 10605525          150234      1.42
-CSG Intersection               5941890          614188     10.34
-CSG Merge                      5064252           34556      0.68
-CSG Union                       422021          374500     88.74
-Plane                          4303417          345154      8.02
-Sphere                            1181             293     24.81
-Torus                          5317815          137254      2.58
-Torus Bound                    5317815          148276      2.79
-Bounding Box                  19675118         1641170      8.34
+Box                             901232          180035     19.98
+Cone/Cylinder                  1351647          210040     15.54
+CSG Intersection                542165           59004     10.88
+CSG Merge                       225308              55      0.02
+CSG Union                       225308           53813     23.88
+Sphere                           53345           12371     23.19
+Torus                           536901          201779     37.58
+Torus Bound                     536901          222546     41.45
+Clipping Object                  54902           21182     38.58
+Bounding Box                  16880474         4475047     26.51
 ----------------------------------------------------------------------------
-Roots tested:                148276   eliminated:               102898
-Shadow Ray Tests:           4359630   Succeeded:                408512
-Shadow Cache Hits:           405003
+Roots tested:                222546   eliminated:               141050
+Shadow Ray Tests:            725842   Succeeded:                 78230
+Shadow Cache Hits:            75639
+Reflected Rays:              121383
 ----------------------------------------------------------------------------
-Radiosity samples calculated:              162 (0.05 %)
-  discarded due to low quality:              2
-  retained for re-use:                     160
-Radiosity samples reused:               345000
-Radiosity sample rays shot:               4896
-Radiosity octree nodes:                     70
-Radiosity octree samples/node:            2.29
-Radiosity blocks examined:            19560107
-Radiosity blocks passed test 0:       19560107 (100.00 %)
-Radiosity blocks passed test 1:       10684079 (54.62 %)
-Radiosity blocks passed test 2:        9747147 (49.83 %)
-Radiosity blocks passed test 3:        7290237 (37.27 %)
-Radiosity blocks passed test 4:        6774700 (34.64 %)
-Radiosity blocks passed test 5:        6556169 (33.52 %)
-Radiosity blocks rejected:            13003938 (66.48 %)
+Radiosity samples calculated:             1156 (0.96 %)
+  discarded due to low quality:             30
+  retained for re-use:                    1126
+Radiosity samples reused:               118793
+Radiosity sample rays shot:             133124
+Radiosity octree nodes:                    275
+Radiosity octree samples/node:            4.09
+Radiosity blocks examined:            15714074
+Radiosity blocks passed test 0:       15714074 (100.00 %)
+Radiosity blocks passed test 1:       10049534 (63.95 %)
+Radiosity blocks passed test 2:        8411478 (53.53 %)
+Radiosity blocks passed test 3:        1585728 (10.09 %)
+Radiosity blocks passed test 4:        1110253 (7.07 %)
+Radiosity blocks passed test 5:        1089538 (6.93 %)
+Radiosity blocks rejected:            14624536 (93.07 %)
 ----------------------------------------------------------------------------
-Radiosity Depth 0 calculated:              119 (0.03 %)
-Radiosity Depth 0 reused:               343775
-Radiosity Depth 0 rays shot:              4165
+Radiosity Depth 0 calculated:              658 (0.98 %)
+Radiosity Depth 0 reused:                66622
+Radiosity Depth 0 rays shot:             98700
 ----------------------------------------------------------------------------
-Radiosity (final) calculated:               64 (0.02 %)
-Radiosity (final) reused:               344021
-Radiosity (final) rays shot:              2114
+Radiosity (final) calculated:              647 (0.59 %)
+Radiosity (final) reused:               108174
+Radiosity (final) rays shot:             81517
 ----------------------------------------------------------------------------
-  Pass     Depth 0    Depth 1           Total
+  Pass     Depth 0    Depth 1    Depth 2           Total
 ----------------------------------------------------------------------------
-  1             50         16              66
-  2             12         20              32
-  Final         57          7              64
+  1             13         19         11              43
+  2             54         48          8             110
+  3             47         68         19             134
+  4             96        103         23             222
+  Final        448        183         16             647
 ----------------------------------------------------------------------------
-  Total        119         43             162
-  Weight     0.115      0.057 
+  Total        658        421         77            1156
+  Weight     0.472      0.222      0.083 
 ----------------------------------------------------------------------------
-Peak memory used:          28712960 bytes
+Peak memory used:          39800832 bytes
 ----------------------------------------------------------------------------
 Render Time:
   Photon Time:      No photons
-  Radiosity Time:   0 hours  0 minutes  0 seconds (0.019 seconds)
-              using 4 thread(s) with 0.015 CPU-seconds total
-  Trace Time:       0 hours  0 minutes  1 seconds (1.645 seconds)
-              using 4 thread(s) with 6.279 CPU-seconds total
+  Radiosity Time:   0 hours  0 minutes  0 seconds (0.084 seconds)
+              using 4 thread(s) with 0.170 CPU-seconds total
+  Trace Time:       0 hours  0 minutes  0 seconds (0.957 seconds)
+              using 4 thread(s) with 2.858 CPU-seconds total

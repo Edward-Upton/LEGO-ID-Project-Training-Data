@@ -1,7 +1,7 @@
 <annotation>
     <folder>less_selected</folder>
     <!-- Image file name e.g. image.jpg -->
-    <filename>6213-89-%s.jpg</filename>
+    <filename>14716-2-%s.jpg</filename>
     <!-- Path to Image -->
     <path>c:\Users\edupt\Documents\GitHub\LEGO-ID-Project-Training-Data\TrainingData\images</path>
     <size>
@@ -12,14 +12,14 @@
     <segmented>0</segmented>
     <object>
         <!-- Name of part number -->
-        <name>6213</name>
+        <name>14716</name>
         <truncuated>0</truncuated>
         <difficult>0</difficult>
         <bndbox>
-            <xmin>211</xmin>
-            <ymin>196</ymin>
-            <xmax>284</xmax>
-            <ymax>339</ymax>
+            <xmin>202</xmin>
+            <ymin>177</ymin>
+            <xmax>298</xmax>
+            <ymax>422</ymax>
         </bndbox>
     </object>
 </annotation>

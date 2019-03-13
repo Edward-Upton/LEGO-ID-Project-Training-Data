@@ -1,17 +1,17 @@
-// POV Scene File for Part Number = 6213                   
+// POV Scene File for Part Number = 14716                   
 // String Input Parameters = (part_number, camera_distance_Int, camera_rotation-x_Int, 
 //                            camera_rotate-y_Int, Light_RGB_Vector, Number_Lights-X, 
 //                            Number_Lights-Y_Int, Background_RGB_Vector, Brick_Include_Filename, 
 //                            Brick_lg_partnum, Rotation_Vector, Translation_Vector, 
 //                            Brick_RGB_Vector, Plane_RGB_Vector, Plane_Diffusion_Int)
-
+#version 3.8
 #include "screen.inc"     
 #include "math.inc"   
 #include "functions.inc"    
 #include "colors.inc"  
-#include "lg_defs.inc"   
+  
 
-#version 3.7
+
 
 #declare LDXQual = 3.000000;	// Quality (0 = Bounding Box; 1 = No Refraction; 2 = Normal; 3 = Stud Logos)
 #declare LDXStuds = 1;	// Show studs? (1 = YES; 0 = NO)
@@ -60,18 +60,26 @@
 #declare LDXOrigVer = version;	// DO NOT MODIFY
 
 #declare lg_quality = 3;
-
 global_settings {
 	assumed_gamma 1.4
-	adc_bailout 0.01/2
 	radiosity {
-		brightness 0.5
+	  pretrace_start 0.08
+      pretrace_end   0.01
+      count 150
+      nearest_count 10
+      error_bound 0.5
+      recursion_limit 3
+      low_error_factor 0.5
+      gray_threshold 0
+      minimum_reuse 0.005
+      maximum_reuse 0.2
+      brightness 1.0
+      adc_bailout 0.01/2
 	}
-	max_trace_level 5
 }
 
 
-#local cam_dist = 40.28871092173244;                   //50 ---- 75
+#local cam_dist = 15;                   //50 ---- 75
 #local cam_move = 1/2;
 #local cam_area = 2;
 #local cam_loca = -z * cam_dist;
@@ -79,18 +87,20 @@ global_settings {
 #local cam_angl = 45;
 #local cam_tran = transform
 {
-	rotate		+x * asind(tand(22.110404069717372))    //0 ( horizontal ) ---- 45 (vertical)
-	rotate		+y * 350.1397898358027                 //can be anything (degress)
+	rotate		+x * asind(tand(35))    //0 ( horizontal ) ---- 45 (vertical)
+	rotate		+y * 225                 //can be anything (degress)
+	rotate      +z * 0
 	translate	+y * cam_move
-}
+	}
+	
 Set_Camera_Orthographic(false)
 Set_Camera_Transform(cam_tran)
 Set_Camera(cam_loca, cam_look, cam_angl)
 
 light_source {
-    <2, 10, -3>,
-    rgb <0.8268325288395437,0.8967581617424335,0.9951407980172712>                              //RGB Vector with 3 values between 0.8 and 1.0
-    area_light <5, 0, 0>, <0, 0, 5>, 6.658337192441863, 3.8628656524350355     //How many x lights, and how many y lights (integers)
+    <5, 5, 5>,
+    rgb <0.9420778960700524,0.8455162119620765,0.9359169942773703>                              //RGB Vector with 3 values between 0.8 and 1.0
+    area_light <5, 0, 0>, <0, 0, 5>, 5,5     //How many x lights, and how many y lights (integers)
     adaptive 1
     jitter
   }
@@ -98,31 +108,29 @@ light_source {
 
 
 
-background { color rgb <0.16625033582132243,0.4234562849313036,0.031887213975343776> }             //RGB Vector with 3 values
-
-#include "lg_6213.inc"                           //LG Brick Include String
+background { color rgb <0.1975550548742615,0.9884066907171114,0.7509304746108175> transmit 1}             //RGB Vector with 3 values
+#include "lg_defs.inc"                  //For stuff to make bricks
+#include "lg_14716.inc"                           //LG Brick Include String
 
 #local brick_model = object { 
-        lg_6213                              //lg + part num string
+        lg_14716                              //lg + part num string
         rotate <-90,0,0>                //XYZ Vector (normal rotation = <-90,0,0>
         translate <0,2.88,0>     //XYZ Vecotr (Y is 0.96 for normal brick height)
-        texture { pigment { color rgb <0.8666945761726234,0.23639481442470056,0.7299337902288237> }}     // RGB Vector with 3 values
-        }
+        texture { pigment { color rgb <0.8412454138258748,0.2913327055476408,0.8307192289885031> }
+                  finish {
+                    ambient 0
+                    diffuse 1
+                    brilliance 1
+                    phong 1
+                    phong_size 40
+                    reflection { 0.025 falloff 1 exponent 1 }
+                    specular 0.75
+                    roughness 0.1
+        }}}
            
 
  
 object {brick_model}
-
-
-
-object {
-    plane { y, 0}
-    texture {
-        pigment { color rgb <0.15287452375179145,0.21580204307607265,0.4069486848912852> }        //RGB Vector with 3 values
-        finish { ambient 0 diffuse 0.4166083354351986 specular 0.4839642690757445 }     //Diffusion value between 0.4 and 0.8, specular value between 0.1 and 0.5
-    }
-}              
-       
        
  
     
